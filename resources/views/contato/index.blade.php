@@ -8,4 +8,5 @@
         <a href="{{url('contatos/'.$contato->id)}}">{{$contato->nome}}</a>
     </li>
     @endforeach
+    </ul>
 @endesection
