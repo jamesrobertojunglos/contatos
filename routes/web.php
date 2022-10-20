@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('contatos',ContatosController::Class);
+Route::resource('contatos',ContatosController::class);
