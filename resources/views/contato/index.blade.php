@@ -5,7 +5,7 @@
     <ul>
     @foreach ($contatos as $contato)
     <li>
-        <a href="{{url('contatos/'.$contato->id}})">{{$contato->nome}}</a>
+        <a href="{{url('contatos/'.$contato->id)}}">{{$contato->nome}}</a>
     </li>
     @endforeach
 @endesection
