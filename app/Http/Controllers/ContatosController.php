@@ -48,7 +48,7 @@ class ContatosController extends Controller
     public function show($id)
     {
         $contato = Contato::find($id);
-        return view('contato.show',array('contato=> $contato'));
+        return view('contato.show',array('contato' => $contato));
     }
 
     /**
