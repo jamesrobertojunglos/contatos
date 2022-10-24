@@ -4,7 +4,7 @@
        <h1>Contato - {{$contato->Nome}}</h1>
        <ul>
         <li>ID: {{$contato->id}}</li>
-        <li>e-mail: <a href="mailto:{{$contato->email}}">
+        <li>E-mail: <a href="mailto:{{$contato->email}}">
         {{$contato->email}}</a></li>
         <li>Telefone: {{$contato->telefone}}</li>
         <li>Cidade: {{$contato->Cidade}}</li>
