@@ -8,9 +8,9 @@
     </div>
     @endif
     <br />
-    <a class="btn btn-success" href="{{url('contatos/create')}}">Criar</a>
+        <a class="btn btn-success" href="{{url('contatos/create')}}">Criar</a>
     <br /><br />
-    <table class="table table-striped">
+<table class="table table-striped">
     @foreach ($contatos as $contato)
     <tr>
         <td>
@@ -20,4 +20,12 @@
     @endforeach
 </table>
     @endsection
+
+
+
+
+
+
+
+    
    
