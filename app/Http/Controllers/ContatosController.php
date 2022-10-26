@@ -110,13 +110,15 @@ class ContatosController extends Controller
             'Cidade' => 'required',
             'Estado' => 'required',
            ]);
-           $contato = new Contato();
+
+           $contato = Contato::find($id);
            $contato->Nome = $request->input('nome');
            $contato->email = $request->input('email');
            $contato->telefone = $request->input('telefone');
            $contato->Cidade = $request->input('cidade');
            $contato->Estado = $request->input('estado');
            if($contato->save()) {
+            Session::flash('mensagem','Contato alterado com sucesso');
             return redirect()->back();
            }
             }
